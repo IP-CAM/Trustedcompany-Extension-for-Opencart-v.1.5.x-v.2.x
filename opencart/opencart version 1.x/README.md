@@ -21,5 +21,5 @@ then Trustedcompany will be able collect reviews from those customers.
 			. admin/language/portuguese/module/trustedcompany_acf.php ---> to Root_Directory/admin/language/portuguese/module/trustedcompany_acf.php
 
 /** SUPPORT **/
-	For support send an email to tech@trustedcompany.com
+	For any support please post a request in this link : https://github.com/Trustedcompany/Extensions/issues
 
