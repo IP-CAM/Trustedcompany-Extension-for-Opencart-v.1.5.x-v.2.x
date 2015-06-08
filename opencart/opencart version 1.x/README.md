@@ -21,6 +21,10 @@ then Trustedcompany will be able collect reviews from those customers.
 			. admin/language/english/module/trustedcompany_acf.php ---> to Root_Directory/admin/language/english/module/trustedcompany_acf.php
 			. admin/language/portuguese/module/trustedcompany_acf.php ---> to Root_Directory/admin/language/portuguese/module/trustedcompany_acf.php
 
+	• then login to your Admin dashboard and go to Extensions-->Module
+	• you will see `TrustedCompany Rating` in the list click on install
+	• then in the same place click on `TrustedCompany Rating` --> Edit add your ACF email and you can start collecting reviews.
+
 /** SUPPORT **/
 
 	For any support please post a request in this link : https://github.com/Trustedcompany/Extensions/issues
