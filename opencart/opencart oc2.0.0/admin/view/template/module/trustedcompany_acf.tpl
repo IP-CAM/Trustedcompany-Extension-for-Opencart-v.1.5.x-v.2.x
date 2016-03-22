@@ -32,14 +32,14 @@
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-trustedcompanydns"><?php echo $text_tc_domain; ?></label>
             <div class="col-sm-10">
-              <input size="60" name="trustedcompanydns" class="form-control" value="<?php if (isset(trustedcompanydns)) { echo trustedcompanydns; } ?>" />
+              <input size="60" name="trustedcompanydns" class="form-control" value="<?php if (isset($trustedcompanydns)) { echo $trustedcompanydns; } ?>" />
             </div>
           </div>
 
           <div class="form-group">
             <label class="col-sm-2 control-label" for="input-trustedcompanyinboundemail"><?php echo $text_tc_email; ?></label>
             <div class="col-sm-10">
-              <input size="60" name="trustedcompanyinboundemail" class="form-control" value="<?php if (isset(trustedcompanyinboundemail)) { echo trustedcompanyinboundemail; } ?>" />
+              <input size="60" name="trustedcompanyinboundemail" class="form-control" value="<?php if (isset($trustedcompanyinboundemail)) { echo $trustedcompanyinboundemail; } ?>" />
             </div>
           </div>
 
