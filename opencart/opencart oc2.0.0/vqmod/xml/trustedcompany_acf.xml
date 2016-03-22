@@ -1,0 +1,41 @@
+<modification>
+	<id><![CDATA[TrustedCompany ACF Module]]></id>
+	<version><![CDATA[v1]]></version>
+	<vqmver><![CDATA[2.x]]></vqmver>
+	<author><![CDATA[Jacob L @ Designheroes.net]]></author>
+
+
+	<file name="catalog/model/checkout/order.php" error="log">
+		<operation>
+			<search position="before"><![CDATA[
+				// Admin Alert Mail
+			]]></search>
+			<add><![CDATA[
+
+			// TrustedCompany ACF email
+			if ($this->config->get('trustedcompanyinboundemail')) {
+				$TrustedCompany_acf_email_subject = 'TrustedCompany ACF Email‏';
+
+				// add the TAG to the email.
+					$TrustedCompany_acf_email_tag .= "acf email from : " . $order_info['store_name'] . " domain name : " . $this->config->get('trustedcompanydns');
+
+					$TrustedCompany_acf_email_tag .= "\n";
+
+					$TrustedCompany_acf_email_tag .= "<!-- TC: " . $order_info['shipping_firstname'] . " " . $order_info['shipping_lastname'] . "," . $order_info['email'] . "," . $order_info['order_id'] ." -->";
+
+					$mail = new Mail($this->config->get('config_mail'));
+					$mail->setTo($this->config->get('trustedcompanyinboundemail'));
+					$mail->setFrom($this->config->get('config_email'));
+					$mail->setSender($order_info['store_name']);
+					$mail->setSubject($TrustedCompany_acf_email_subject);
+					$mail->setText($TrustedCompany_acf_email_tag);
+					$mail->send();
+			}
+
+
+			]]></add>
+		</operation>
+	</file>
+
+
+</modification>

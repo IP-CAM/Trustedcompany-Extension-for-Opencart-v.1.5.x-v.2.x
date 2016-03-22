@@ -3,7 +3,7 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right">
-        <button type="submit" form="form-text_tc_text" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <button type="submit" form="form-trustedcompany_acf" data-toggle="tooltip" title="<?php echo $button_save; ?>" class="btn btn-primary"><i class="fa fa-save"></i></button>
         <a href="<?php echo $cancel; ?>" data-toggle="tooltip" title="<?php echo $button_cancel; ?>" class="btn btn-default"><i class="fa fa-reply"></i></a></div>
       <h1><?php echo $heading_title; ?></h1>
       <ul class="breadcrumb">
@@ -25,21 +25,21 @@
       </div>
 
       <div class="panel-body">
-        <p><?php echo $text_acf; ?></p>
-        <form action="<?php echo $action; ?>" method="post" id="form-trustedcompanyacf" class="form-horizontal">
+        <p><?php echo $text_tc_text; ?></p>
+        <form action="<?php echo $action; ?>" method="post" id="form-trustedcompany_acf" class="form-horizontal">
 
 
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-trustedcompanydns"><?php echo $texte_dns; ?></label>
+            <label class="col-sm-2 control-label" for="input-trustedcompanydns"><?php echo $text_tc_domain; ?></label>
             <div class="col-sm-10">
-              <input size="60" name="trustedcompanyacf_client_domain" class="form-control" value="<?php if (isset($trustedcompanyacf_client_domain)) { echo $trustedcompanyacf_client_domain; } ?>" />
+              <input size="60" name="trustedcompanydns" class="form-control" value="<?php if (isset(trustedcompanydns)) { echo trustedcompanydns; } ?>" />
             </div>
           </div>
 
           <div class="form-group">
-            <label class="col-sm-2 control-label" for="input-trustedcompanyinboundemail"><?php echo $texte_add_email; ?></label>
+            <label class="col-sm-2 control-label" for="input-trustedcompanyinboundemail"><?php echo $text_tc_email; ?></label>
             <div class="col-sm-10">
-              <input size="60" name="trustedcompanyacf_inbound_email" class="form-control" value="<?php if (isset($trustedcompanyacf_inbound_email)) { echo $trustedcompanyacf_inbound_email; } ?>" />
+              <input size="60" name="trustedcompanyinboundemail" class="form-control" value="<?php if (isset(trustedcompanyinboundemail)) { echo trustedcompanyinboundemail; } ?>" />
             </div>
           </div>
 
