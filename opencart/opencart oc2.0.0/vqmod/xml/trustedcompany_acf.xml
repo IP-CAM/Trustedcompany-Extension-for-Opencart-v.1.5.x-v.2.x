@@ -2,7 +2,7 @@
 	<id><![CDATA[TrustedCompany ACF Module]]></id>
 	<version><![CDATA[v1]]></version>
 	<vqmver><![CDATA[2.x]]></vqmver>
-	<author><![CDATA[Jacob L @ Designheroes.net]]></author>
+	<author><![CDATA[adel.bachene@trustedcompany.com]]></author>
 
 
 	<file name="catalog/model/checkout/order.php" error="log">

@@ -1,10 +1,11 @@
 <?php
-// Head
-$_['heading_title']    		= 'TrustedCompany Rating';
-// le rest du texte
-$_['texte_dns'] 			= 'Your Domain';
-$_['texte_add_email'] 		= 'ACF Email address:';
-$_['text_acf'] 				= 'For TrustedCompany to beable to send your customers survey emails, you need to enter the ACF-Email address provided by TrustedCompany ex: (system+XXXXXX@inbound.trustedcompany.com)';
-$_['text_module']     = 'Modules';
-$_['text_success']      	= 'Success: You updated the TrustedCompany Rating Module';
-$_['text_edit'] 			= 'Edit TrustedCompany Rating module';
+// Heading
+$_['heading_title']    	= 'Nota TrustedCompany';
+$_['text_module']       = 'Módulos';
+$_['text_success']      = 'Sucesso: Você atualizou o módulo Nota TrustedCompany';
+$_['text_edit'] 		    = 'Editar o módulo Nota TrustedCompany';
+// tc
+$_['texte_dns'] 	      = 'Seu domínio';
+$_['texte_add_email'] 	= 'Endereço de email ACF:';
+$_['text_acf'] 		      = 'Para a TrustedCompany enviar convites de avaliação para seus clientes, você precisa inserir o email de ACF que é disponibilizado para você pela TrustedCompany (exemplo: system+XXXXX@inbound.trustedcompany.com). Se você não recebeu esse endereço, por favor entre em contato com o suporte técnico da TrustedCompany.';
+
