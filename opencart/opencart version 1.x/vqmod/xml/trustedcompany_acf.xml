@@ -17,7 +17,7 @@
 				$TrustedCompany_acf_email_subject = 'TrustedCompany ACF Email‏';
 				
 				// add the TAG to the email.						
-					$TrustedCompany_acf_email_tag .= "acf email from : " . $order_info['store_name'] . " domain name : " . $this->config->get('trustedcompanydns');
+					$TrustedCompany_acf_email_tag = "acf email from : " . $order_info['store_name'] . " domain name : " . $this->config->get('trustedcompanydns');
 
 					$TrustedCompany_acf_email_tag .= "\n";
 
